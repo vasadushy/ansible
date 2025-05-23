@@ -1,0 +1,4 @@
+for i in `lsdev -Cc disk|egrep -i "hitachi|mpio|emc"|awk '{print $1}'`
+do 
+echo $i `lsdev -Cc disk|grep -w $i|awk '{print $4,$7,$8}'` `lsattr -El $i|grep algorithm|awk '{print $2}'` `lsattr -El $i|grep queue_depth|awk '{print $2}'` `lsattr -El $i |grep hcheck_interval|awk '{print $2}'` `lsattr -El $i|grep reserve_policy|awk '{print $2}'` `lspath |grep -w $i|wc -l` `bootinfo -s $i`
+done
