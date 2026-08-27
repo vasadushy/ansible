@@ -1,1 +1,64 @@
+Hi Team 
+This is Vasanth from the automation team 
+
+This month we have completed 5 automations and I would like to highlight 3 of those automations 
+
+The first one is the Network and Firewall teams MOTD banner correction. 
+
+This Automation is to recode the CCS scripts from the NetMRI tool to python.
+The reason why we're recoding it to python ? is because the NetMRI tool is nearing the end of support and the new tool that we're going to procure does not support the CCS script. 
+So as a proactive measure we wanted to check if we are able to convert the CCS scripts to python and run it on NetMRI so that it will be easy to move the scripts to the new tool. And we have successfully completed the Automation.
+
+what are risks if we are not re - coding them to python now ? As per the team there are approximately some 200 scripts available in CCS, so migrating all the scripts to python after they have the new tool is going to be a challenging task. And if there were to be any delays in re-coding the scripts, then the Team will have to move back to doing the tasks manually util the scripts are ready which is going to cost them a huge amount of time and effort.
+
+The Team is also working to see if all these 200 scripts are still required and they're trying to remove the unwanted scripts from being recoded. As of now we do not have the hours we will be saving by recoding the scripts, once the team has finalized the number of scripts that we're going to recode we will be able to provide the hours we will be saving.
+
+I would also like to highlight that we're not only recoding the scripts but we have also improvised and made the python scripts provide the required results more effectively than it was delivered in the CCS.
+
+
+The second automation is the sudoers group validation this is to support the AIX security modernization, There are several group ID's present in the AIX sudoers file that needs to be validated and cleaned up.
+Why we're performing this clean up, These groups are available across all the aix servers and in some cases there are users that may not need access to these groups but are still a member of the group. So with this automation we're checking the Groups in local and AD level, it involves multiple level of checks to be performed from the group level and user level before being cleaned up.
+what do we benefit by this automation, we're saving 17 hours of the manual effort that is required to check the groups and user access in both local and AD level on the servers and performing the clean up.
+
+The last one is the SQL database mail configuration, This Automation is to recode the powershell and SQL scripts to Ansible. It gathers the mail configuration details from the MSSQL servers which is required for them to identify the configurations and reset the passwords for the ASMTP users as and when needed.
+The reason why we're performing the recoding is to have the scripts developed across all the teams to be placed under one common repository that is the GitHub and the execution platform will be in AWX.
+
+We are continuously collaborating with other teams and technology leads to identify automation opportunities within their areas of responsibility.
+
+
+Through these engagements, we assess existing processes, evaluate potential efficiency gains, and explore opportunities to streamline operations, reduce manual effort, and improve overall service delivery through automation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
